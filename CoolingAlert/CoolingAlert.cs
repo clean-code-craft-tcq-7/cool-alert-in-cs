@@ -23,7 +23,7 @@ public static class CoolingAlert
         // {
         //     action.ActionType = ActionType.ALERT_EMAIL;
         //     action.ActionBody = $"Temperature alert: {temperature:F1}F";
-        // } ------- STEP 4 code ends -------
+        // } //------- STEP 4 code ends -------
         // else
         // {
         //     action.ActionType = ActionType.NO_ALERT;
