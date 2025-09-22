@@ -2,9 +2,9 @@ namespace CoolingAlert;
 
 public enum BatteryState
 {
-    BATTERY_OK,
-    BATTERY_WARNING,
-    BATTERY_ALERT
+    BatteryOk,
+    BatteryWarning,
+    BatteryAlert
 }
 
 public sealed class BatteryDataModel

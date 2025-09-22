@@ -7,11 +7,11 @@ public static class Classify
 {
     public static BatteryState ClassifyBatteryState(BatteryDataModel batteryData)
     {
-        BatteryState state = BatteryState.BATTERY_OK;
+        BatteryState state = BatteryState.BatteryOk;
         float alertThreshold = Thresholds.AlertTemperatureForCoolingType(batteryData.ThermalManagementType);
         if (batteryData.Temperature >= alertThreshold)
         {
-            state = BatteryState.BATTERY_ALERT;
+            state = BatteryState.BatteryAlert;
         }
         return state;
     }

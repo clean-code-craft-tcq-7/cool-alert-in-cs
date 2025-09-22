@@ -26,7 +26,7 @@ public class ChainTests
     [Fact]
     public void BatteryDataToAction()
     {
-        var batteryData = new BatteryDataModel { BatteryId = 10342, ThermalManagementType = ThermalManagementType.THERMAL_HYBRID, Temperature = 60 };
+        var batteryData = new BatteryDataModel { BatteryId = 10342, ThermalManagementType = ThermalManagementType.ThermalHybrid, Temperature = 60 };
         var actuatorStub = new ActuatorStub();
 
         Chain.BatteryDataToAction(batteryData, actuatorStub);

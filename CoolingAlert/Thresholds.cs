@@ -10,9 +10,9 @@ public static class Thresholds
     private static readonly IReadOnlyDictionary<ThermalManagementType, float> thresholds =
         new Dictionary<ThermalManagementType, float>
         {
-            { ThermalManagementType.THERMAL_PASSIVE, 40.0f },
-            { ThermalManagementType.THERMAL_HYBRID, 50.0f },
-            { ThermalManagementType.THERMAL_ACTIVE, 55.0f }
+            { ThermalManagementType.ThermalPassive, 40.0f },
+            { ThermalManagementType.ThermalHybrid, 50.0f },
+            { ThermalManagementType.ThermalActive, 55.0f }
         };
 
     public static float AlertTemperatureForCoolingType(ThermalManagementType type)

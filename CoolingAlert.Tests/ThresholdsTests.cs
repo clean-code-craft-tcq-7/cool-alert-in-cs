@@ -9,9 +9,9 @@ public class ThresholdsTests
     [Fact]
     public void CoolingDependentThresholds()
     {
-        float passiveLimit = Thresholds.AlertTemperatureForCoolingType(ThermalManagementType.THERMAL_PASSIVE);
-        float hiActiveLimit = Thresholds.AlertTemperatureForCoolingType(ThermalManagementType.THERMAL_ACTIVE);
-        float medActiveLimit = Thresholds.AlertTemperatureForCoolingType(ThermalManagementType.THERMAL_HYBRID);
+        float passiveLimit = Thresholds.AlertTemperatureForCoolingType(ThermalManagementType.ThermalPassive);
+        float hiActiveLimit = Thresholds.AlertTemperatureForCoolingType(ThermalManagementType.ThermalActive);
+        float medActiveLimit = Thresholds.AlertTemperatureForCoolingType(ThermalManagementType.ThermalHybrid);
 
         Assert.True(passiveLimit < medActiveLimit);
         Assert.True(medActiveLimit < hiActiveLimit);
