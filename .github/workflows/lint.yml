@@ -12,12 +12,14 @@ jobs:
         uses: JetBrains/ReSharper-InspectCode@v0.8
         with:
           solution: ./CoolingAlert.sln
+          output: results.html
+          format: Html
       
       - name: Create inspect code artifact
         uses: actions/upload-artifact@v4
         with:
-          name: inspectcode_results.json
-          path: results.sarif.json
+          name: inspectcode_results.html
+          path: results.html
           retention-days: 7
 
     permissions:
