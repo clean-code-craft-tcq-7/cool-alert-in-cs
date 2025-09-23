@@ -7,7 +7,7 @@ public static class Chain
 {
     public static void BatteryDataToAction(BatteryDataModel batteryData, IActuators actuators)
     {
-        if (batteryData.Temperature > Thresholds.AlertTemperatureForCoolingType(batteryData.ThermalManagementType))
+        if (Classify.ClassifyBatteryState(batteryData) == BatteryState.BatteryAlert)
         {
             actuators.EmailSender("manager@battery.com", "Battery Alert", "Battery temperature is too high", "noreply@battery.com");
         }
